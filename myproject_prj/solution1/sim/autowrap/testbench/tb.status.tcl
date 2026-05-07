@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/./sim/autowrap/testbench/myproject.cpp_pre.cpp.tb.cpp

@@ -1,0 +1,170 @@
+
+
+================================================================
+== Vitis HLS Report for 'hard_sigmoid_array_array_ap_ufixed_8_0_4_0_0_1u_hard_sigmoid_config17_s'
+================================================================
+* Date:           Wed May  6 12:33:09 2026
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        myproject_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplusRFSOC
+* Target device:  xczu49dr-ffvf1760-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  3.156 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       84|       84|  0.420 us|  0.420 us|   84|   84|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                      |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |       Loop Name      |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- HardSigmoidActLoop  |       82|       82|         4|          1|          1|    80|       yes|
+        +----------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|     193|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|     -|       -|       -|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       -|      54|    -|
+|Register         |        -|     -|      48|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|     0|      48|     247|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |     2160|  4272|  850560|  425280|   80|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|     0|      ~0|      ~0|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |add_ln458_1_fu_154_p2             |         +|   0|  0|  21|          14|          13|
+    |add_ln463_fu_245_p2               |         +|   0|  0|  15|           8|           8|
+    |datareg_fu_148_p2                 |         +|   0|  0|  29|          22|          13|
+    |i_18_fu_113_p2                    |         +|   0|  0|  14|           7|           1|
+    |and_ln463_1_fu_293_p2             |       and|   0|  0|   2|           1|           1|
+    |and_ln463_fu_235_p2               |       and|   0|  0|   2|           1|           1|
+    |ap_condition_117                  |       and|   0|  0|   2|           1|           1|
+    |icmp_ln448_fu_107_p2              |      icmp|   0|  0|  14|           7|           7|
+    |icmp_ln459_fu_160_p2              |      icmp|   0|  0|  29|          22|          14|
+    |icmp_ln463_fu_223_p2              |      icmp|   0|  0|  12|           4|           1|
+    |ap_block_pp0_stage0_01001         |        or|   0|  0|   2|           1|           1|
+    |ap_block_state3_pp0_stage0_iter2  |        or|   0|  0|   2|           1|           1|
+    |or_ln459_fu_180_p2                |        or|   0|  0|   2|           1|           1|
+    |or_ln463_1_fu_287_p2              |        or|   0|  0|   2|           1|           1|
+    |or_ln463_fu_229_p2                |        or|   0|  0|   2|           1|           1|
+    |datareg_1_fu_186_p3               |    select|   0|  0|  14|           1|          14|
+    |layer17_out_TDATA_int_regslice    |    select|   0|  0|   8|           1|           8|
+    |select_ln459_fu_172_p3            |    select|   0|  0|  15|           1|          15|
+    |ap_enable_pp0                     |       xor|   0|  0|   2|           1|           2|
+    |xor_ln463_1_fu_281_p2             |       xor|   0|  0|   2|           1|           2|
+    |xor_ln463_fu_259_p2               |       xor|   0|  0|   2|           1|           2|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0| 193|          98|         108|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i_17    |   9|          2|    7|         14|
+    |i_fu_82                  |   9|          2|    7|         14|
+    |layer15_out_blk_n        |   9|          2|    1|          2|
+    |layer17_out_TDATA_blk_n  |   9|          2|    1|          2|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  54|         12|   18|         36|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------+----+----+-----+-----------+
+    |               Name               | FF | LUT| Bits| Const Bits|
+    +----------------------------------+----+----+-----+-----------+
+    |add_ln458_1_reg_325               |  13|   0|   14|          1|
+    |ap_CS_fsm                         |   1|   0|    1|          0|
+    |ap_done_reg                       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3           |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter2_reg  |   1|   0|    1|          0|
+    |datareg_reg_319                   |  21|   0|   22|          1|
+    |i_fu_82                           |   7|   0|    7|          0|
+    +----------------------------------+----+----+-----+-----------+
+    |Total                             |  48|   0|   50|          2|
+    +----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------------+-----+-----+------------+--------------------------------------------------------------------------+--------------+
+|          RTL Ports         | Dir | Bits|  Protocol  |                               Source Object                              |    C Type    |
++----------------------------+-----+-----+------------+--------------------------------------------------------------------------+--------------+
+|ap_clk                      |   in|    1|  ap_ctrl_hs|  hard_sigmoid<array,array<ap_ufixed<8,0,4,0,0>,1u>,hard_sigmoid_config17>|  return value|
+|ap_rst                      |   in|    1|  ap_ctrl_hs|  hard_sigmoid<array,array<ap_ufixed<8,0,4,0,0>,1u>,hard_sigmoid_config17>|  return value|
+|ap_start                    |   in|    1|  ap_ctrl_hs|  hard_sigmoid<array,array<ap_ufixed<8,0,4,0,0>,1u>,hard_sigmoid_config17>|  return value|
+|ap_done                     |  out|    1|  ap_ctrl_hs|  hard_sigmoid<array,array<ap_ufixed<8,0,4,0,0>,1u>,hard_sigmoid_config17>|  return value|
+|ap_continue                 |   in|    1|  ap_ctrl_hs|  hard_sigmoid<array,array<ap_ufixed<8,0,4,0,0>,1u>,hard_sigmoid_config17>|  return value|
+|ap_idle                     |  out|    1|  ap_ctrl_hs|  hard_sigmoid<array,array<ap_ufixed<8,0,4,0,0>,1u>,hard_sigmoid_config17>|  return value|
+|ap_ready                    |  out|    1|  ap_ctrl_hs|  hard_sigmoid<array,array<ap_ufixed<8,0,4,0,0>,1u>,hard_sigmoid_config17>|  return value|
+|layer15_out_dout            |   in|   20|     ap_fifo|                                                               layer15_out|       pointer|
+|layer15_out_num_data_valid  |   in|    8|     ap_fifo|                                                               layer15_out|       pointer|
+|layer15_out_fifo_cap        |   in|    8|     ap_fifo|                                                               layer15_out|       pointer|
+|layer15_out_empty_n         |   in|    1|     ap_fifo|                                                               layer15_out|       pointer|
+|layer15_out_read            |  out|    1|     ap_fifo|                                                               layer15_out|       pointer|
+|layer17_out_TREADY          |   in|    1|        axis|                                                               layer17_out|       pointer|
+|layer17_out_TDATA           |  out|    8|        axis|                                                               layer17_out|       pointer|
+|layer17_out_TVALID          |  out|    1|        axis|                                                               layer17_out|       pointer|
++----------------------------+-----+-----+------------+--------------------------------------------------------------------------+--------------+
+

@@ -1,0 +1,899 @@
+
+
+================================================================
+== Vitis HLS Report for 'resize_nearest_array_ap_ufixed_6_0_4_0_0_64u_config11_s'
+================================================================
+* Date:           Wed May  6 12:31:08 2026
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        myproject_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplusRFSOC
+* Target device:  xczu49dr-ffvf1760-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  3.447 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       79|       79|  0.395 us|  0.395 us|   79|   79|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 80
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 31 
+31 --> 32 
+32 --> 33 
+33 --> 34 
+34 --> 35 
+35 --> 36 
+36 --> 37 
+37 --> 38 
+38 --> 39 
+39 --> 40 
+40 --> 41 
+41 --> 42 
+42 --> 43 
+43 --> 44 
+44 --> 45 
+45 --> 46 
+46 --> 47 
+47 --> 48 
+48 --> 49 
+49 --> 50 
+50 --> 51 
+51 --> 52 
+52 --> 53 
+53 --> 54 
+54 --> 55 
+55 --> 56 
+56 --> 57 
+57 --> 58 
+58 --> 59 
+59 --> 60 
+60 --> 61 
+61 --> 62 
+62 --> 63 
+63 --> 64 
+64 --> 65 
+65 --> 66 
+66 --> 67 
+67 --> 68 
+68 --> 69 
+69 --> 70 
+70 --> 71 
+71 --> 72 
+72 --> 73 
+73 --> 74 
+74 --> 75 
+75 --> 76 
+76 --> 77 
+77 --> 78 
+78 --> 79 
+79 --> 80 
+80 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.44>
+ST_1 : Operation 81 [1/1] (1.81ns)   --->   "%layer10_out_read = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 81 'read' 'layer10_out_read' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_1 : Operation 82 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 82 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 2 <SV = 1> <Delay = 1.63>
+ST_2 : Operation 83 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 83 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 3 <SV = 2> <Delay = 3.44>
+ST_3 : Operation 84 [1/1] (1.81ns)   --->   "%layer10_out_read_1 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 84 'read' 'layer10_out_read_1' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_3 : Operation 85 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_1" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 85 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 4 <SV = 3> <Delay = 1.63>
+ST_4 : Operation 86 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_1" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 86 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 5 <SV = 4> <Delay = 3.44>
+ST_5 : Operation 87 [1/1] (1.81ns)   --->   "%layer10_out_read_2 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 87 'read' 'layer10_out_read_2' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_5 : Operation 88 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_2" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 88 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 6 <SV = 5> <Delay = 1.63>
+ST_6 : Operation 89 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_2" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 89 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 7 <SV = 6> <Delay = 3.44>
+ST_7 : Operation 90 [1/1] (1.81ns)   --->   "%layer10_out_read_3 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 90 'read' 'layer10_out_read_3' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_7 : Operation 91 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_3" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 91 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 8 <SV = 7> <Delay = 1.63>
+ST_8 : Operation 92 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_3" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 92 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 9 <SV = 8> <Delay = 3.44>
+ST_9 : Operation 93 [1/1] (1.81ns)   --->   "%layer10_out_read_4 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 93 'read' 'layer10_out_read_4' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_9 : Operation 94 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_4" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 94 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 10 <SV = 9> <Delay = 1.63>
+ST_10 : Operation 95 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_4" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 95 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 11 <SV = 10> <Delay = 3.44>
+ST_11 : Operation 96 [1/1] (1.81ns)   --->   "%layer10_out_read_5 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 96 'read' 'layer10_out_read_5' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_11 : Operation 97 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_5" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 97 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 12 <SV = 11> <Delay = 1.63>
+ST_12 : Operation 98 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_5" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 98 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 13 <SV = 12> <Delay = 3.44>
+ST_13 : Operation 99 [1/1] (1.81ns)   --->   "%layer10_out_read_6 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 99 'read' 'layer10_out_read_6' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_13 : Operation 100 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_6" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 100 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 14 <SV = 13> <Delay = 1.63>
+ST_14 : Operation 101 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_6" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 101 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 15 <SV = 14> <Delay = 3.44>
+ST_15 : Operation 102 [1/1] (1.81ns)   --->   "%layer10_out_read_7 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 102 'read' 'layer10_out_read_7' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_15 : Operation 103 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_7" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 103 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 16 <SV = 15> <Delay = 1.63>
+ST_16 : Operation 104 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_7" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 104 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 17 <SV = 16> <Delay = 3.44>
+ST_17 : Operation 105 [1/1] (1.81ns)   --->   "%layer10_out_read_8 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 105 'read' 'layer10_out_read_8' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_17 : Operation 106 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_8" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 106 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 18 <SV = 17> <Delay = 1.63>
+ST_18 : Operation 107 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_8" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 107 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 19 <SV = 18> <Delay = 3.44>
+ST_19 : Operation 108 [1/1] (1.81ns)   --->   "%layer10_out_read_9 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 108 'read' 'layer10_out_read_9' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_19 : Operation 109 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_9" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 109 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 20 <SV = 19> <Delay = 1.63>
+ST_20 : Operation 110 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_9" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 110 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 21 <SV = 20> <Delay = 3.44>
+ST_21 : Operation 111 [1/1] (1.81ns)   --->   "%layer10_out_read_10 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 111 'read' 'layer10_out_read_10' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_21 : Operation 112 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_10" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 112 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 22 <SV = 21> <Delay = 1.63>
+ST_22 : Operation 113 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_10" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 113 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 23 <SV = 22> <Delay = 3.44>
+ST_23 : Operation 114 [1/1] (1.81ns)   --->   "%layer10_out_read_11 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 114 'read' 'layer10_out_read_11' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_23 : Operation 115 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_11" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 115 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 24 <SV = 23> <Delay = 1.63>
+ST_24 : Operation 116 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_11" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 116 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 25 <SV = 24> <Delay = 3.44>
+ST_25 : Operation 117 [1/1] (1.81ns)   --->   "%layer10_out_read_12 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 117 'read' 'layer10_out_read_12' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_25 : Operation 118 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_12" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 118 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 26 <SV = 25> <Delay = 1.63>
+ST_26 : Operation 119 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_12" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 119 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 27 <SV = 26> <Delay = 3.44>
+ST_27 : Operation 120 [1/1] (1.81ns)   --->   "%layer10_out_read_13 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 120 'read' 'layer10_out_read_13' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_27 : Operation 121 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_13" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 121 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 28 <SV = 27> <Delay = 1.63>
+ST_28 : Operation 122 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_13" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 122 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 29 <SV = 28> <Delay = 3.44>
+ST_29 : Operation 123 [1/1] (1.81ns)   --->   "%layer10_out_read_14 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 123 'read' 'layer10_out_read_14' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_29 : Operation 124 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_14" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 124 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 30 <SV = 29> <Delay = 1.63>
+ST_30 : Operation 125 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_14" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 125 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 31 <SV = 30> <Delay = 3.44>
+ST_31 : Operation 126 [1/1] (1.81ns)   --->   "%layer10_out_read_15 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 126 'read' 'layer10_out_read_15' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_31 : Operation 127 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_15" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 127 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 32 <SV = 31> <Delay = 1.63>
+ST_32 : Operation 128 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_15" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 128 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 33 <SV = 32> <Delay = 3.44>
+ST_33 : Operation 129 [1/1] (1.81ns)   --->   "%layer10_out_read_16 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 129 'read' 'layer10_out_read_16' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_33 : Operation 130 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_16" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 130 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 34 <SV = 33> <Delay = 1.63>
+ST_34 : Operation 131 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_16" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 131 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 35 <SV = 34> <Delay = 3.44>
+ST_35 : Operation 132 [1/1] (1.81ns)   --->   "%layer10_out_read_17 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 132 'read' 'layer10_out_read_17' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_35 : Operation 133 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_17" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 133 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 36 <SV = 35> <Delay = 1.63>
+ST_36 : Operation 134 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_17" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 134 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 37 <SV = 36> <Delay = 3.44>
+ST_37 : Operation 135 [1/1] (1.81ns)   --->   "%layer10_out_read_18 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 135 'read' 'layer10_out_read_18' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_37 : Operation 136 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_18" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 136 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 38 <SV = 37> <Delay = 1.63>
+ST_38 : Operation 137 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_18" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 137 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 39 <SV = 38> <Delay = 3.44>
+ST_39 : Operation 138 [1/1] (1.81ns)   --->   "%layer10_out_read_19 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 138 'read' 'layer10_out_read_19' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_39 : Operation 139 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_19" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 139 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 40 <SV = 39> <Delay = 1.63>
+ST_40 : Operation 140 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_19" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 140 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 41 <SV = 40> <Delay = 3.44>
+ST_41 : Operation 141 [1/1] (1.81ns)   --->   "%layer10_out_read_20 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 141 'read' 'layer10_out_read_20' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_41 : Operation 142 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_20" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 142 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 42 <SV = 41> <Delay = 1.63>
+ST_42 : Operation 143 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_20" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 143 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 43 <SV = 42> <Delay = 3.44>
+ST_43 : Operation 144 [1/1] (1.81ns)   --->   "%layer10_out_read_21 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 144 'read' 'layer10_out_read_21' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_43 : Operation 145 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_21" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 145 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 44 <SV = 43> <Delay = 1.63>
+ST_44 : Operation 146 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_21" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 146 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 45 <SV = 44> <Delay = 3.44>
+ST_45 : Operation 147 [1/1] (1.81ns)   --->   "%layer10_out_read_22 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 147 'read' 'layer10_out_read_22' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_45 : Operation 148 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_22" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 148 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 46 <SV = 45> <Delay = 1.63>
+ST_46 : Operation 149 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_22" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 149 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 47 <SV = 46> <Delay = 3.44>
+ST_47 : Operation 150 [1/1] (1.81ns)   --->   "%layer10_out_read_23 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 150 'read' 'layer10_out_read_23' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_47 : Operation 151 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_23" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 151 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 48 <SV = 47> <Delay = 1.63>
+ST_48 : Operation 152 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_23" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 152 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 49 <SV = 48> <Delay = 3.44>
+ST_49 : Operation 153 [1/1] (1.81ns)   --->   "%layer10_out_read_24 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 153 'read' 'layer10_out_read_24' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_49 : Operation 154 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_24" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 154 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 50 <SV = 49> <Delay = 1.63>
+ST_50 : Operation 155 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_24" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 155 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 51 <SV = 50> <Delay = 3.44>
+ST_51 : Operation 156 [1/1] (1.81ns)   --->   "%layer10_out_read_25 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 156 'read' 'layer10_out_read_25' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_51 : Operation 157 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_25" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 157 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 52 <SV = 51> <Delay = 1.63>
+ST_52 : Operation 158 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_25" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 158 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 53 <SV = 52> <Delay = 3.44>
+ST_53 : Operation 159 [1/1] (1.81ns)   --->   "%layer10_out_read_26 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 159 'read' 'layer10_out_read_26' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_53 : Operation 160 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_26" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 160 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 54 <SV = 53> <Delay = 1.63>
+ST_54 : Operation 161 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_26" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 161 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 55 <SV = 54> <Delay = 3.44>
+ST_55 : Operation 162 [1/1] (1.81ns)   --->   "%layer10_out_read_27 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 162 'read' 'layer10_out_read_27' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_55 : Operation 163 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_27" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 163 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 56 <SV = 55> <Delay = 1.63>
+ST_56 : Operation 164 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_27" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 164 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 57 <SV = 56> <Delay = 3.44>
+ST_57 : Operation 165 [1/1] (1.81ns)   --->   "%layer10_out_read_28 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 165 'read' 'layer10_out_read_28' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_57 : Operation 166 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_28" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 166 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 58 <SV = 57> <Delay = 1.63>
+ST_58 : Operation 167 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_28" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 167 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 59 <SV = 58> <Delay = 3.44>
+ST_59 : Operation 168 [1/1] (1.81ns)   --->   "%layer10_out_read_29 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 168 'read' 'layer10_out_read_29' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_59 : Operation 169 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_29" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 169 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 60 <SV = 59> <Delay = 1.63>
+ST_60 : Operation 170 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_29" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 170 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 61 <SV = 60> <Delay = 3.44>
+ST_61 : Operation 171 [1/1] (1.81ns)   --->   "%layer10_out_read_30 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 171 'read' 'layer10_out_read_30' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_61 : Operation 172 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_30" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 172 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 62 <SV = 61> <Delay = 1.63>
+ST_62 : Operation 173 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_30" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 173 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 63 <SV = 62> <Delay = 3.44>
+ST_63 : Operation 174 [1/1] (1.81ns)   --->   "%layer10_out_read_31 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 174 'read' 'layer10_out_read_31' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_63 : Operation 175 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_31" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 175 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 64 <SV = 63> <Delay = 1.63>
+ST_64 : Operation 176 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_31" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 176 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 65 <SV = 64> <Delay = 3.44>
+ST_65 : Operation 177 [1/1] (1.81ns)   --->   "%layer10_out_read_32 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 177 'read' 'layer10_out_read_32' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_65 : Operation 178 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_32" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 178 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 66 <SV = 65> <Delay = 1.63>
+ST_66 : Operation 179 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_32" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 179 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 67 <SV = 66> <Delay = 3.44>
+ST_67 : Operation 180 [1/1] (1.81ns)   --->   "%layer10_out_read_33 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 180 'read' 'layer10_out_read_33' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_67 : Operation 181 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_33" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 181 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 68 <SV = 67> <Delay = 1.63>
+ST_68 : Operation 182 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_33" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 182 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 69 <SV = 68> <Delay = 3.44>
+ST_69 : Operation 183 [1/1] (1.81ns)   --->   "%layer10_out_read_34 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 183 'read' 'layer10_out_read_34' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_69 : Operation 184 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_34" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 184 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 70 <SV = 69> <Delay = 1.63>
+ST_70 : Operation 185 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_34" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 185 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 71 <SV = 70> <Delay = 3.44>
+ST_71 : Operation 186 [1/1] (1.81ns)   --->   "%layer10_out_read_35 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 186 'read' 'layer10_out_read_35' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_71 : Operation 187 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_35" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 187 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 72 <SV = 71> <Delay = 1.63>
+ST_72 : Operation 188 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_35" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 188 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 73 <SV = 72> <Delay = 3.44>
+ST_73 : Operation 189 [1/1] (1.81ns)   --->   "%layer10_out_read_36 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 189 'read' 'layer10_out_read_36' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_73 : Operation 190 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_36" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 190 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 74 <SV = 73> <Delay = 1.63>
+ST_74 : Operation 191 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_36" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 191 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 75 <SV = 74> <Delay = 3.44>
+ST_75 : Operation 192 [1/1] (1.81ns)   --->   "%layer10_out_read_37 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 192 'read' 'layer10_out_read_37' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_75 : Operation 193 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_37" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 193 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 76 <SV = 75> <Delay = 1.63>
+ST_76 : Operation 194 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_37" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 194 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 77 <SV = 76> <Delay = 3.44>
+ST_77 : Operation 195 [1/1] (1.81ns)   --->   "%layer10_out_read_38 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 195 'read' 'layer10_out_read_38' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_77 : Operation 196 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_38" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 196 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 78 <SV = 77> <Delay = 1.63>
+ST_78 : Operation 197 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_38" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 197 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 79 <SV = 78> <Delay = 3.44>
+ST_79 : Operation 198 [1/1] (1.81ns)   --->   "%layer10_out_read_39 = read i384 @_ssdm_op_Read.ap_fifo.volatile.i384P0A, i384 %layer10_out" [firmware/nnet_utils/nnet_image_stream.h:25]   --->   Operation 198 'read' 'layer10_out_read_39' <Predicate = true> <Delay = 1.81> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.81> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 40> <FIFO>
+ST_79 : Operation 199 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_39" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 199 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+
+State 80 <SV = 79> <Delay = 1.63>
+ST_80 : Operation 200 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i384 %layer11_out, void @empty_2, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 200 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_80 : Operation 201 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i384 %layer10_out, void @empty_2, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 201 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_80 : Operation 202 [1/1] (1.63ns)   --->   "%write_ln57 = write void @_ssdm_op_Write.ap_fifo.volatile.i384P0A, i384 %layer11_out, i384 %layer10_out_read_39" [firmware/nnet_utils/nnet_image_stream.h:57]   --->   Operation 202 'write' 'write_ln57' <Predicate = true> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 384> <Depth = 80> <FIFO>
+ST_80 : Operation 203 [1/1] (0.00ns)   --->   "%ret_ln62 = ret" [firmware/nnet_utils/nnet_image_stream.h:62]   --->   Operation 203 'ret' 'ret_ln62' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5.000ns, clock uncertainty: 1.350ns.
+
+ <State 1>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [5]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [45]  (1.634 ns)
+
+ <State 2>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [46]  (1.634 ns)
+
+ <State 3>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_1', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [6]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [47]  (1.634 ns)
+
+ <State 4>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [48]  (1.634 ns)
+
+ <State 5>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_2', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [7]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [49]  (1.634 ns)
+
+ <State 6>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [50]  (1.634 ns)
+
+ <State 7>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_3', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [8]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [51]  (1.634 ns)
+
+ <State 8>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [52]  (1.634 ns)
+
+ <State 9>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_4', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [9]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [53]  (1.634 ns)
+
+ <State 10>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [54]  (1.634 ns)
+
+ <State 11>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_5', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [10]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [55]  (1.634 ns)
+
+ <State 12>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [56]  (1.634 ns)
+
+ <State 13>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_6', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [11]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [57]  (1.634 ns)
+
+ <State 14>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [58]  (1.634 ns)
+
+ <State 15>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_7', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [12]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [59]  (1.634 ns)
+
+ <State 16>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [60]  (1.634 ns)
+
+ <State 17>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_8', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [13]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [61]  (1.634 ns)
+
+ <State 18>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [62]  (1.634 ns)
+
+ <State 19>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_9', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [14]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [63]  (1.634 ns)
+
+ <State 20>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [64]  (1.634 ns)
+
+ <State 21>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_10', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [15]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [65]  (1.634 ns)
+
+ <State 22>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [66]  (1.634 ns)
+
+ <State 23>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_11', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [16]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [67]  (1.634 ns)
+
+ <State 24>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [68]  (1.634 ns)
+
+ <State 25>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_12', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [17]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [69]  (1.634 ns)
+
+ <State 26>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [70]  (1.634 ns)
+
+ <State 27>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_13', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [18]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [71]  (1.634 ns)
+
+ <State 28>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [72]  (1.634 ns)
+
+ <State 29>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_14', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [19]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [73]  (1.634 ns)
+
+ <State 30>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [74]  (1.634 ns)
+
+ <State 31>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_15', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [20]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [75]  (1.634 ns)
+
+ <State 32>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [76]  (1.634 ns)
+
+ <State 33>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_16', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [21]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [77]  (1.634 ns)
+
+ <State 34>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [78]  (1.634 ns)
+
+ <State 35>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_17', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [22]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [79]  (1.634 ns)
+
+ <State 36>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [80]  (1.634 ns)
+
+ <State 37>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_18', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [23]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [81]  (1.634 ns)
+
+ <State 38>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [82]  (1.634 ns)
+
+ <State 39>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_19', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [24]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [83]  (1.634 ns)
+
+ <State 40>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [84]  (1.634 ns)
+
+ <State 41>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_20', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [25]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [85]  (1.634 ns)
+
+ <State 42>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [86]  (1.634 ns)
+
+ <State 43>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_21', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [26]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [87]  (1.634 ns)
+
+ <State 44>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [88]  (1.634 ns)
+
+ <State 45>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_22', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [27]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [89]  (1.634 ns)
+
+ <State 46>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [90]  (1.634 ns)
+
+ <State 47>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_23', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [28]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [91]  (1.634 ns)
+
+ <State 48>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [92]  (1.634 ns)
+
+ <State 49>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_24', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [29]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [93]  (1.634 ns)
+
+ <State 50>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [94]  (1.634 ns)
+
+ <State 51>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_25', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [30]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [95]  (1.634 ns)
+
+ <State 52>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [96]  (1.634 ns)
+
+ <State 53>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_26', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [31]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [97]  (1.634 ns)
+
+ <State 54>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [98]  (1.634 ns)
+
+ <State 55>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_27', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [32]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [99]  (1.634 ns)
+
+ <State 56>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [100]  (1.634 ns)
+
+ <State 57>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_28', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [33]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [101]  (1.634 ns)
+
+ <State 58>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [102]  (1.634 ns)
+
+ <State 59>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_29', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [34]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [103]  (1.634 ns)
+
+ <State 60>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [104]  (1.634 ns)
+
+ <State 61>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_30', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [35]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [105]  (1.634 ns)
+
+ <State 62>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [106]  (1.634 ns)
+
+ <State 63>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_31', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [36]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [107]  (1.634 ns)
+
+ <State 64>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [108]  (1.634 ns)
+
+ <State 65>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_32', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [37]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [109]  (1.634 ns)
+
+ <State 66>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [110]  (1.634 ns)
+
+ <State 67>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_33', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [38]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [111]  (1.634 ns)
+
+ <State 68>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [112]  (1.634 ns)
+
+ <State 69>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_34', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [39]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [113]  (1.634 ns)
+
+ <State 70>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [114]  (1.634 ns)
+
+ <State 71>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_35', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [40]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [115]  (1.634 ns)
+
+ <State 72>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [116]  (1.634 ns)
+
+ <State 73>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_36', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [41]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [117]  (1.634 ns)
+
+ <State 74>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [118]  (1.634 ns)
+
+ <State 75>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_37', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [42]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [119]  (1.634 ns)
+
+ <State 76>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [120]  (1.634 ns)
+
+ <State 77>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_38', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [43]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [121]  (1.634 ns)
+
+ <State 78>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [122]  (1.634 ns)
+
+ <State 79>: 3.447ns
+The critical path consists of the following:
+	fifo read operation ('layer10_out_read_39', firmware/nnet_utils/nnet_image_stream.h:25) on port 'layer10_out' (firmware/nnet_utils/nnet_image_stream.h:25) [44]  (1.813 ns)
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [123]  (1.634 ns)
+
+ <State 80>: 1.634ns
+The critical path consists of the following:
+	fifo write operation ('write_ln57', firmware/nnet_utils/nnet_image_stream.h:57) on port 'layer11_out' (firmware/nnet_utils/nnet_image_stream.h:57) [124]  (1.634 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+	State 42
+	State 43
+	State 44
+	State 45
+	State 46
+	State 47
+	State 48
+	State 49
+	State 50
+	State 51
+	State 52
+	State 53
+	State 54
+	State 55
+	State 56
+	State 57
+	State 58
+	State 59
+	State 60
+	State 61
+	State 62
+	State 63
+	State 64
+	State 65
+	State 66
+	State 67
+	State 68
+	State 69
+	State 70
+	State 71
+	State 72
+	State 73
+	State 74
+	State 75
+	State 76
+	State 77
+	State 78
+	State 79
+	State 80
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

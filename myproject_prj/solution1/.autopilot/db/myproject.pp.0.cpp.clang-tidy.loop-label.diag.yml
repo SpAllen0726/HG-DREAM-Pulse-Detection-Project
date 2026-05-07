@@ -1,0 +1,1144 @@
+---
+MainSourceFile:  /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1213_1:  '
+    FileOffset:      1213
+    FilePath:        /home/export/sallen2/synthesis_tools/Xilinx_2023.1/Vitis_HLS/2023.1/common/technology/autopilot/etc/ap_int_base.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          830390
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1213_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        /home/export/sallen2/synthesis_tools/Xilinx_2023.1/Vitis_HLS/2023.1/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          1059254
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        /home/export/sallen2/synthesis_tools/Xilinx_2023.1/Vitis_HLS/2023.1/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          1059722
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        /home/export/sallen2/synthesis_tools/Xilinx_2023.1/Vitis_HLS/2023.1/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          1060191
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        /home/export/sallen2/synthesis_tools/Xilinx_2023.1/Vitis_HLS/2023.1/common/technology/autopilot/etc/ap_fixed_base.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          1344240
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_27_1:  '
+    FileOffset:      27
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_types.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          1720376
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_27_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_39_1:  '
+    FileOffset:      39
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_types.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          1720614
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_39_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_56_1:  '
+    FileOffset:      56
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_types.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          1721109
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_56_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_265_1:  '
+    FileOffset:      265
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2418375
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_265_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_275_1:  '
+    FileOffset:      275
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2418762
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_275_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_286_1:  '
+    FileOffset:      286
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2419097
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_286_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_293_1:  '
+    FileOffset:      293
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2419320
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_293_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_295_2:  '
+    FileOffset:      295
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2419415
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_295_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_307_1:  '
+    FileOffset:      307
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2419779
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_307_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_309_2:  '
+    FileOffset:      309
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2419861
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_309_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_324_1:  '
+    FileOffset:      324
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2420204
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_324_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_344_1:  '
+    FileOffset:      344
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2420657
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_344_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_345_2:  '
+    FileOffset:      345
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2420702
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_345_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_360_1:  '
+    FileOffset:      360
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2421111
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_360_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_367_1:  '
+    FileOffset:      367
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2421324
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_367_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_136_1:  '
+    FileOffset:      136
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_conv1d_latency.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2430987
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_136_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_137_2:  '
+    FileOffset:      137
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_conv1d_latency.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2431071
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_137_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_158_3:  '
+    FileOffset:      158
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_conv1d_latency.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2431613
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_158_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_159_4:  '
+    FileOffset:      159
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_conv1d_latency.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2431697
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_159_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_31_1:  '
+    FileOffset:      31
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2435950
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_31_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_43_1:  '
+    FileOffset:      43
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2436203
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_43_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_57_1:  '
+    FileOffset:      57
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2436564
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_57_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_84_1:  '
+    FileOffset:      84
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2437380
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_84_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_114_1:  '
+    FileOffset:      114
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2438041
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_114_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_151_1:  '
+    FileOffset:      151
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2439186
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_151_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_167_1:  '
+    FileOffset:      167
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2439650
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_167_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_200_1:  '
+    FileOffset:      200
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2440582
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_200_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_213_2:  '
+    FileOffset:      213
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2441117
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_213_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_246_1:  '
+    FileOffset:      246
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2441980
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_246_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_255_2:  '
+    FileOffset:      255
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2442250
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_255_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_268_3:  '
+    FileOffset:      268
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2442813
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_268_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_275_1:  '
+    FileOffset:      275
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2443050
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_275_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_288_1:  '
+    FileOffset:      288
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2443410
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_288_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_325_1:  '
+    FileOffset:      325
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2444367
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_325_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_330_2:  '
+    FileOffset:      330
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2444487
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_330_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_331_3:  '
+    FileOffset:      331
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2444544
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_331_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_348_4:  '
+    FileOffset:      348
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2445144
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_348_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_361_1:  '
+    FileOffset:      361
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2445652
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_361_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_369_2:  '
+    FileOffset:      369
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2445796
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_369_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_405_1:  '
+    FileOffset:      405
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2446991
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_405_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_407_2:  '
+    FileOffset:      407
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2447060
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_407_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_409_3:  '
+    FileOffset:      409
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2447129
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_409_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_414_4:  '
+    FileOffset:      414
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2447385
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_414_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_427_1:  '
+    FileOffset:      427
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2447699
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_427_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_457_1:  '
+    FileOffset:      457
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2448336
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_457_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_484_1:  '
+    FileOffset:      484
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2449172
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_484_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_498_1:  '
+    FileOffset:      498
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2449514
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_498_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_514_1:  '
+    FileOffset:      514
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2449972
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_514_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_532_1:  '
+    FileOffset:      532
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2450442
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_532_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_549_1:  '
+    FileOffset:      549
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2450845
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_549_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_566_1:  '
+    FileOffset:      566
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2451240
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_566_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_596_1:  '
+    FileOffset:      596
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2451906
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_596_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_615_1:  '
+    FileOffset:      615
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2452480
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_615_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_645_1:  '
+    FileOffset:      645
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2453146
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_645_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_664_1:  '
+    FileOffset:      664
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2453700
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_664_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_694_1:  '
+    FileOffset:      694
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2454349
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_694_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_721_1:  '
+    FileOffset:      721
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2455187
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_721_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_749_1:  '
+    FileOffset:      749
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2455871
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_749_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_779_1:  '
+    FileOffset:      779
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2456556
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_779_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_808_1:  '
+    FileOffset:      808
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2457396
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_808_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_828_1:  '
+    FileOffset:      828
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2457815
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_828_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_229_1:  '
+    FileOffset:      229
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2463869
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_229_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_236_2:  '
+    FileOffset:      236
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2464009
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_236_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_245_3:  '
+    FileOffset:      245
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2464274
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_245_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_254_4:  '
+    FileOffset:      254
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2464468
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_254_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_258_5:  '
+    FileOffset:      258
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2464561
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_258_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_269_6:  '
+    FileOffset:      269
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2464887
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_269_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_273_7:  '
+    FileOffset:      273
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2464997
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_273_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_297_1:  '
+    FileOffset:      297
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2465963
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_297_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_301_2:  '
+    FileOffset:      301
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2466049
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_301_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_320_1:  '
+    FileOffset:      320
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2466725
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_320_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_211_1:  '
+    FileOffset:      211
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation_stream.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2473101
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_211_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_220_2:  '
+    FileOffset:      220
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation_stream.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2473379
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_220_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_325_1:  '
+    FileOffset:      325
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation_stream.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2476600
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_325_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_330_2:  '
+    FileOffset:      330
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation_stream.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2476742
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_330_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_338_3:  '
+    FileOffset:      338
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_activation_stream.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2476946
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_338_3: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      33
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_dense_resource.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      107
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_dense_resource.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      189
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_dense_resource.h
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_105_1:  '
+    FileOffset:      105
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_conv1d.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2510801
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_105_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_107_2:  '
+    FileOffset:      107
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_conv1d.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2510875
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_107_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_116_3:  '
+    FileOffset:      116
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_conv1d.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2511124
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_116_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_120_4:  '
+    FileOffset:      120
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_conv1d.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2511314
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_120_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_122_5:  '
+    FileOffset:      122
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_conv1d.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2511388
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_122_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_67_1:  '
+    FileOffset:      67
+    FilePath:        /home/export/sallen2/synthesis_tools/Xilinx_2023.1/Vitis_HLS/2023.1/common/technology/autopilot/ap_shift_reg.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2512637
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_67_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_74_1:  '
+    FileOffset:      74
+    FilePath:        /home/export/sallen2/synthesis_tools/Xilinx_2023.1/Vitis_HLS/2023.1/common/technology/autopilot/ap_shift_reg.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2512841
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_74_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_27_1:  '
+    FileOffset:      27
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_image.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2528145
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_27_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_28_2:  '
+    FileOffset:      28
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_image.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2528202
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_28_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_31_3:  '
+    FileOffset:      31
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_image.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2528342
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_31_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_20_1:  '
+    FileOffset:      20
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_padding.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2530945
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_20_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_21_2:  '
+    FileOffset:      21
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_padding.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2530998
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_21_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25_3:  '
+    FileOffset:      25
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_padding.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2531090
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_29_4:  '
+    FileOffset:      29
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_padding.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2531199
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_29_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_39_1:  '
+    FileOffset:      39
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_padding.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2531494
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_39_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_40_2:  '
+    FileOffset:      40
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_padding.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2531549
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_40_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_45_3:  '
+    FileOffset:      45
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_padding.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2531641
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_45_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_46_4:  '
+    FileOffset:      46
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_padding.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2531696
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_46_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_51_5:  '
+    FileOffset:      51
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_padding.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2531805
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_51_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_52_6:  '
+    FileOffset:      52
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_padding.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2531861
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_52_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_75_1:  '
+    FileOffset:      75
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_padding.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2532616
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_75_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_77_2:  '
+    FileOffset:      77
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_padding.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2532670
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_77_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_78_3:  '
+    FileOffset:      78
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_padding.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2532728
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_78_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_83_4:  '
+    FileOffset:      83
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_padding.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2532839
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_83_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_84_5:  '
+    FileOffset:      84
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_padding.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2532899
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_84_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_87_6:  '
+    FileOffset:      87
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_padding.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2533002
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_87_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_90_7:  '
+    FileOffset:      90
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_padding.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2533122
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_90_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_95_8:  '
+    FileOffset:      95
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_padding.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2533233
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_95_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_96_9:  '
+    FileOffset:      96
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_padding.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2533294
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_96_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_108_1:  '
+    FileOffset:      108
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_padding.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2533670
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_108_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_109_2:  '
+    FileOffset:      109
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_padding.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2533724
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_109_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_110_3:  '
+    FileOffset:      110
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_padding.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2533784
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_110_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_116_4:  '
+    FileOffset:      116
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_padding.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2533894
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_116_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_117_5:  '
+    FileOffset:      117
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_padding.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2533950
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_117_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_118_6:  '
+    FileOffset:      118
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_padding.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2534009
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_118_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_122_7:  '
+    FileOffset:      122
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_padding.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2534116
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_122_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_123_8:  '
+    FileOffset:      123
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_padding.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2534175
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_123_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_127_9:  '
+    FileOffset:      127
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_padding.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2534299
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_127_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_128_10:  '
+    FileOffset:      128
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_padding.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2534359
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_128_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_134_11:  '
+    FileOffset:      134
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_padding.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2534469
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_134_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_135_12:  '
+    FileOffset:      135
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_padding.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2534526
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_135_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_136_13:  '
+    FileOffset:      136
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_padding.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2534586
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_136_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_11_1:  '
+    FileOffset:      11
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_padding_stream.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2535142
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_11_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_22_1:  '
+    FileOffset:      22
+    FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/firmware/nnet_utils/nnet_padding_stream.h
+    Replacements:    
+      - FilePath:        /home/export/sallen2/synthesis_tools/quantized_cnn_final/myproject_prj/solution1/.autopilot/db/myproject.pp.0.cpp
+        Offset:          2535459
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_22_1: '
+...
