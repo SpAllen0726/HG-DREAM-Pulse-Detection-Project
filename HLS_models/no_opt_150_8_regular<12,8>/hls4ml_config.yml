@@ -1,0 +1,98 @@
+Backend: Vitis
+ClockPeriod: 5
+HLSConfig:
+  LayerName:
+    activation_7:
+      Precision:
+        result: ap_fixed<12,8>
+        table: fixed<18,8>
+      ReuseFactor: 1
+      TableSize: 1024
+      Trace: false
+    conv1d_17:
+      ConvImplementation: LineBuffer
+      ParallelizationFactor: 1
+      Precision:
+        accum: ap_fixed<12,8>
+        bias: ap_fixed<12,8>
+        result: ap_fixed<12,8>
+        weight: ap_fixed<12,8>
+      ReuseFactor: 1
+      Trace: false
+    conv1d_17_relu:
+      Precision:
+        result: ap_fixed<12,8>
+        table: fixed<18,8>
+      ReuseFactor: 1
+      TableSize: 1024
+      Trace: false
+    conv1d_18:
+      ConvImplementation: LineBuffer
+      ParallelizationFactor: 1
+      Precision:
+        accum: ap_fixed<12,8>
+        bias: ap_fixed<12,8>
+        result: ap_fixed<12,8>
+        weight: ap_fixed<12,8>
+      ReuseFactor: 1
+      Trace: false
+    conv1d_18_linear:
+      Precision:
+        result: ap_fixed<12,8>
+        table: fixed<18,8>
+      ReuseFactor: 1
+      TableSize: 1024
+      Trace: false
+    conv1d_19:
+      ConvImplementation: LineBuffer
+      ParallelizationFactor: 1
+      Precision:
+        accum: ap_fixed<12,8>
+        bias: ap_fixed<12,8>
+        result: ap_fixed<12,8>
+        weight: ap_fixed<12,8>
+      ReuseFactor: 1
+      Trace: false
+    conv1d_19_linear:
+      Precision:
+        result: ap_fixed<12,8>
+        table: fixed<18,8>
+      ReuseFactor: 1
+      TableSize: 1024
+      Trace: false
+    conv1d_20:
+      ConvImplementation: LineBuffer
+      ParallelizationFactor: 1
+      Precision:
+        accum: ap_fixed<12,8>
+        bias: ap_fixed<12,8>
+        result: ap_fixed<12,8>
+        weight: ap_fixed<12,8>
+      ReuseFactor: 1
+      Trace: false
+    conv1d_20_linear:
+      Precision:
+        result: ap_fixed<12,8>
+        table: fixed<18,8>
+      ReuseFactor: 1
+      TableSize: 1024
+      Trace: false
+    input_5:
+      Precision:
+        result: ap_fixed<12,8>
+      Trace: false
+  Model:
+    BramFactor: 1000000000
+    Precision: ap_fixed<12,8>
+    ReuseFactor: 1
+    Strategy: Latency
+    TraceOutput: false
+IOType: io_stream
+InputData: null
+KerasModel: !keras_model 'HLS_models/no_opt_150_8_regular<12,8>/keras_model.h5'
+OutputDir: HLS_models/no_opt_150_8_regular<12,8>
+OutputPredictions: null
+Part: xcu250-figd2104-2L-e
+ProjectName: myproject
+Stamp: 26aB05ED
+Version: 1.0.0
