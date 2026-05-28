@@ -1,6 +1,6 @@
 //Numpy array shape [1]
-//Min -0.062500000000
-//Max -0.062500000000
+//Min -0.281250000000
+//Max -0.281250000000
 //Number of zeros 0
 
 #ifndef B17_H_
@@ -9,7 +9,7 @@
 #ifndef __SYNTHESIS__
 bias17_t b17[1];
 #else
-bias17_t b17[1] = {-0.06250};
+bias17_t b17[1] = {-0.28125};
 #endif
 
 #endif

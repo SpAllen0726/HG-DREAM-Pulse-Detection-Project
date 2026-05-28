@@ -112,10 +112,10 @@ HLSConfig:
     TraceOutput: false
 IOType: io_stream
 InputData: null
-KerasModel: !keras_model 'HLS_models/no_opt_150_16<10,10>/keras_model.h5'
-OutputDir: HLS_models/no_opt_150_16<10,10>
+KerasModel: !keras_model '../HLS_models/no_opt_150_16<10,10>/keras_model.h5'
+OutputDir: ../HLS_models/no_opt_150_16<10,10>
 OutputPredictions: null
 Part: xcu250-figd2104-2L-e
 ProjectName: myproject
-Stamp: DCf6C7Ab
+Stamp: CEBaD0F3
 Version: 1.0.0
