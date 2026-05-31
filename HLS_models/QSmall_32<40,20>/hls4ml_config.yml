@@ -1,0 +1,121 @@
+Backend: Vitis
+ClockPeriod: 5
+HLSConfig:
+  LayerName:
+    input_7:
+      Precision:
+        result: ap_fixed<40,20>
+      Trace: false
+    q_activation_24:
+      Precision:
+        result: ufixed<6,0,RND_CONV,SAT>
+        table: fixed<18,8>
+      ReuseFactor: 1
+      TableSize: 1024
+      Trace: false
+    q_activation_25:
+      Precision:
+        result: ufixed<6,0,RND_CONV,SAT>
+        table: fixed<18,8>
+      ReuseFactor: 1
+      TableSize: 1024
+      Trace: false
+    q_activation_26:
+      Precision:
+        result: ufixed<6,0,RND_CONV,SAT>
+        table: fixed<18,8>
+      ReuseFactor: 1
+      TableSize: 1024
+      Trace: false
+    q_activation_27:
+      Precision:
+        result: ufixed<8,0,RND_CONV,SAT>
+        shift: ap_fixed<40,20>
+        slope: ap_fixed<40,20>
+        table: fixed<18,8>
+      ReuseFactor: 1
+      TableSize: 1024
+      Trace: false
+    q_conv1d_24:
+      ConvImplementation: LineBuffer
+      ParallelizationFactor: 1
+      Precision:
+        accum: ap_fixed<40,20>
+        bias: fixed<8,3>
+        result: ap_fixed<40,20>
+        weight: fixed<8,3>
+      ReuseFactor: 1
+      Trace: false
+    q_conv1d_24_linear:
+      Precision:
+        result: ap_fixed<40,20>
+        table: fixed<18,8>
+      ReuseFactor: 1
+      TableSize: 1024
+      Trace: false
+    q_conv1d_25:
+      ConvImplementation: LineBuffer
+      ParallelizationFactor: 1
+      Precision:
+        accum: ap_fixed<40,20>
+        bias: fixed<8,3>
+        result: ap_fixed<40,20>
+        weight: fixed<8,3>
+      ReuseFactor: 1
+      Trace: false
+    q_conv1d_25_linear:
+      Precision:
+        result: ap_fixed<40,20>
+        table: fixed<18,8>
+      ReuseFactor: 1
+      TableSize: 1024
+      Trace: false
+    q_conv1d_26:
+      ConvImplementation: LineBuffer
+      ParallelizationFactor: 1
+      Precision:
+        accum: ap_fixed<40,20>
+        bias: fixed<8,3>
+        result: ap_fixed<40,20>
+        weight: fixed<8,3>
+      ReuseFactor: 1
+      Trace: false
+    q_conv1d_26_linear:
+      Precision:
+        result: ap_fixed<40,20>
+        table: fixed<18,8>
+      ReuseFactor: 1
+      TableSize: 1024
+      Trace: false
+    q_conv1d_27:
+      ConvImplementation: LineBuffer
+      ParallelizationFactor: 1
+      Precision:
+        accum: ap_fixed<40,20>
+        bias: fixed<8,3>
+        result: ap_fixed<40,20>
+        weight: fixed<8,3>
+      ReuseFactor: 1
+      Trace: false
+    q_conv1d_27_linear:
+      Precision:
+        result: ap_fixed<40,20>
+        table: fixed<18,8>
+      ReuseFactor: 1
+      TableSize: 1024
+      Trace: false
+  Model:
+    BramFactor: 1000000000
+    Precision: ap_fixed<40,20>
+    ReuseFactor: 1
+    Strategy: Latency
+    TraceOutput: false
+IOType: io_stream
+InputData: null
+KerasModel: !keras_model '../HLS_models/QSmall_32<40,20>/keras_model.h5'
+OutputDir: ../HLS_models/QSmall_32<40,20>
+OutputPredictions: null
+Part: xcu250-figd2104-2L-e
+ProjectName: myproject
+Stamp: f8fb44C7
+Version: 1.0.0
